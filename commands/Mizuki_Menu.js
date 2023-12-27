@@ -58,7 +58,7 @@ cmd({
 
                 image: {
 
-                    url: 'https://telegra.ph/file/e9c7c757ed8011e8355f8.jpg',
+                    url: 'https://telegra.ph/file/52d12737a0d15888155ec.jpg',
 
                 },
 
