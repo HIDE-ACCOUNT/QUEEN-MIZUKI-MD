@@ -127,7 +127,7 @@ cmd(_0x1d86f4, async (_0x2ef2bf, _0x3dd005, _0x24bdf8) => {
       _0xc6dd27 = { url: _0x5116f6.url },
       _0xc119b2 = {
         image: _0xc6dd27,
-        caption: 'ᴍᴀᴅᴇ ʙʏ ʀᴏᴡᴅʏ ʙᴀʙʏ ᴍᴅ \uD83C\uDF61',
+        caption: 'ᴍᴀᴅᴇ ʙʏ Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ \uD83C\uDF61',
       }
     _0x2ef2bf.sendMessage(_0x3dd005.chat, _0xc119b2, { quoted: _0x3dd005 })
   } catch (_0x288910) {
