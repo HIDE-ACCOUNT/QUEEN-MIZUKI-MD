@@ -17,7 +17,7 @@ var dlsize = 1000 // 1000mb
 
 cmd({
             pattern: "song",
-            react: "⏳",
+            react: "🎶",
             alias :["song1","so","𝚢𝚝1"],
             desc: "Downloads audio from youtube.",
             category: "downloader",
@@ -41,7 +41,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                     url: anu.thumbnail,
                },
                 caption: `
-┃ Ɋᑌᗴᗴᑎ ᗰIᔕᑌᛕI Ƴ丅ᗰᑭ3 ᗪᒪ┃
+┃ 𝚀𝚄𝙴𝙴𝙽-𝙼𝙸𝚉𝚄𝙺𝙸 𝚈𝚃 𝙼𝙿3 𝙳𝙾𝚆𝙽┃
 
 
 💭 *Title:* ${anu.title}
@@ -108,7 +108,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                 const txt2 = await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
 
                 await Void.sendMessage(citel.chat, { react: {
-        text: "🎤",
+        text: "🎼",
         key: txt2.key,
             } } );
        
@@ -134,7 +134,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
 
 cmd({
             pattern: "video",
-            react: "💡",
+            react: "",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -158,22 +158,22 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                 },
                 caption: `
 
-┃Ɋᑌᗴᗴᑎ ᗰIᔕᑌᛕI Ƴ丅ᗰᑭ4 ᗪᒪ┃
+┃𝚀𝚄𝙴𝙴𝙽 𝙼𝙸𝚉𝚄𝙺𝙸 𝚈𝚃 𝙼𝙿4 𝙳𝙾𝚆𝙽┃
 
  
-⏳ *Title:* ${anu.title}
+🔖 *Title:* ${anu.title}
 
-⏳ *Duration:* ${anu.timestamp}
+🔖 *Duration:* ${anu.timestamp}
 
-⏳ *Viewers:* ${anu.views}
+🔖 *Viewers:* ${anu.views}
 
-⏳ *Uploaded:* ${anu.ago}
+🔖 *Uploaded:* ${anu.ago}
 
-⏳ *Author:* ${anu.author.name}
+🔖 *Author:* ${anu.author.name}
 
-⏳ *Url* : ${anu.url}
+🔖 *Url* : ${anu.url}
 
-*__ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ__✅*
+*🎞️║ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ᴠɪᴅᴇᴏ║🎞️*
 `,
                 footer: tlang().footer,
                 headerType: 4,
@@ -216,7 +216,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                  const txt2 = await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
 
                 await Void.sendMessage(citel.chat, { react: {
-        text: "🎥",
+        text: "📽️",
         key: txt2.key,
             } } );
 			
