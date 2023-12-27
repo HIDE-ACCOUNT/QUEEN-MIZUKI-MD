@@ -40,6 +40,10 @@
 2.  ***Get a Mongodb uri from [Mongodb](https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI) | [Tutorial](https://www.youtube.com/watch?v=WWrpBCBlyuo).***
 
 
+## ```DEPLOY TO HEROKU```
+<p align = center > <a href="https://heroku.com/deploy?template=https://github.com/MR-KALINDU/QUEEN-MIZUKI-MD" target="blank"><img align="center" src="https://i.ibb.co/N7wJrB0/Screenshot-2023-1028-090438.png" alt="Deploy bot" height="212" width="310" /></a> </p>
+
+
 ***Free Mongodb URI,LOL***
 ```
 mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority
