@@ -8,9 +8,9 @@ Secktor.cmd({
     },
     async(Void, citel) => {
         var inital = new Date().getTime();
-        const { key } = await Void.sendMessage(citel.chat, {text: '```Ping!!!```'});
+        const { key } = await Void.sendMessage(citel.chat, {text: '```𝙶𝙴𝚃𝚃𝙸𝙽𝙶 𝙿𝙸𝙽𝙶!!!```'});
         var final = new Date().getTime();
        // await Secktor.sleep(1000)
-       return await Void.sendMessage(citel.chat, {text: '*Pong*\n *' + (final - inital) + ' ms* ', edit: key});
+       return await Void.sendMessage(citel.chat, {text: '*𝚀𝚄𝙴𝙴𝙽-𝙼𝙸𝚉𝚄𝙺𝙸 𝚂𝙿𝙴𝙴𝙳 𝙸𝚂*\n *' + (final - inital) + ' 𝙼𝚂 ☘️* ', edit: key});
     }
 );
