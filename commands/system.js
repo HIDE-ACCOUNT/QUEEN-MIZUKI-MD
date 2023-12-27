@@ -234,18 +234,28 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by SamPandey001.*`
             const alivtxt = `
-*Hello, ${citel.pushName},*
-_This is  ${tlang().title}._
-${alivemessage}
 
-*Version:-* _0.0.7_
-*Uptime:-* _${runtime(process.uptime())}_
-*Owner:-* _${Config.ownername}_
-*Branch:-* _${Config.BRANCH}_
+┏━━━━━❬ＡＬＩＶＥ❭━━━━━━❍
+┃┏━━━━━━━━━━━━━━━━❍
+┃┣❍ 👸Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ👸
+┃┣❍ Qᴜᴇᴇɴ ᴍɪᴢᴜᴋɪ ᴠ1
+┣┻━━━━━━━▢
+┃▢ ⚡ɪ ᴀᴍ ᴀʟɪᴠᴇ ɴᴏᴡ ‼️
+┃▢👋 ʜɪ : 𝚄𝚂𝙴𝚁
+┃▢🔱 ᴠᴇʀꜱɪᴏɴ : *1*
+┗━━━━━▢
+┏━━━━━▢
+┃▢ ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ,
+┃  👸Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ👸
+┃▢ Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ ᴄᴏᴅᴇᴅ ʙʏ,
+┃⚡ ᴍʀ-ᴋᴀʟɪɴᴅᴜ & ᴄʏʙᴇʀ-ᴛʜᴜꜱʜᴀɴ ⚡
+┃▢ ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ ᴛᴏ .ᴍᴇɴᴜ ᴀɴᴅ,
+┃   ᴜꜱᴇ ɪɴ Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ʙᴏᴛ
+┃▢ 🌿ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ ᴅᴀʏ....
+┣━━━━━━━━━━━━━━━━━❍
+┃ 👸Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ👸
+┗━━━━━━━━━━━━━❍
 
-_Type ${prefix}menu for my command list._
-
-_Powered by ${Config.ownername}_
 `;
             let aliveMessage = {
                 image: {
