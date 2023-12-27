@@ -42,32 +42,29 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `╭━〔 *${Config.botname}* 〕━◉\n`
                 str +=
-                    '```' + `│ ╭──────────────◆
-│ │ User:- ${citel.pushName}
-│ │ Theme:- ${tlang().title}
-│ │ Prefix:- [ ${prefix} ]
-│ │ Owner:- ${Config.ownername}
-│ │ Plugins:- ${commands.length}
-│ │ Users:- ${total}
-│ │ Uptime:- ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────◆
-╰───────────────⊷\n
+                    '```' + `┃ ╭━━━━━━━━━━━━━━◉
+┃ ┃ Plugins:- ${commands.length}
+┃ ┃ User:- ${citel.pushName}
+┃ ┃ Owner:- ${Config.ownername}
+┃ ┃ Prefix:- [ ${prefix} ]
+┃ ┃ Version:- 2.0.1
+┃ ┃ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ┃ Time:- ${time}
+┃ ┃ Date:- ${date}
+┃ ╰━━━━━━━━━━━━━━◉\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
-                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                   str += `┠┌─⭓『   *${tiny(category)}*  』\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┠┌─⭓『 *${tiny(category)}* 』\n` ;      
+                        for (const plugins of cmds[category]) { str += `┃│◦ ${fancytext(plugins,1)}\n` ; }
+                        str += `┃└──────────⭓\n`  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `┃│◦ ${fancytext(plugins,1)}\n` ; }
+                         str += `┃└──────────⭓\n`  ; 
                    }
   
                 }
@@ -82,36 +79,32 @@ Secktor.cmd({
     )
     //---------------------------------------------------------------------------
 Secktor.cmd({
-            pattern: "list",
-            desc: "list menu",
-            category: "general"
-        },
-        async(Void, citel) => {
-            const { commands } = require('../lib');
-            let str = `
-╭━━〘 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 〙━━──⊷`
-            str += `
-┃ ⛥╭──────────────      
-┃ ⛥│ User: ${citel.pushName}
-┃ ⛥│ Theme: ${tlang().title}
-┃ ⛥│ Prefix: ${prefix}
-┃ ⛥│ Owner: ${Config.ownername}
-┃ ⛥│ Commands: ${commands.length}
-┃ ⛥│ Uptime: ${runtime(process.uptime())}
-┃ ⛥│ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ⛥│  
-┃ ⛥╰───────────
-╰━━━━━━━━━━━──⊷\n`
-for (let i = 0; i < commands.length; i++) 
-{
-     if(commands[i].pattern==undefined) continue
-     str +=       `╭ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
-     if(commands[i].desc=undefined) commands[i].desc=""
-     str += `╰➛ ${fancytext(commands[i].desc,1)}\n`
-}
-            return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
-        }
-    )
+              pattern: "list",
+              desc: "list menu",
+              category: "general",
+              react: "🥀"
+           },
+          async(Void, msg , text ) => {
+            
+              const { commands } = require('../lib');
+              text = `
+  ╭━━〘 *${Config.botname}* 〙────⊷     
+  ┃ ✭ Theme: ${tlang().title}
+  ┃ ✭ Prefix: ${prefix}
+  ┃ ✭ Owner: ${Config.ownername}
+  ┃ ✭ Commands: ${commands.length}
+  ┃ ✭ Uptime: ${runtime(process.uptime())}
+  ┃ ✭ Mem: ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+  ╰━━━━━━━━━━━━━━⊷\n`
+  text = '';
+              for (let i = 0; i < commands.length; i++){if(commands[i].pattern==undefined){ continue; }else { text += `*${i+1} ${fancytext(commands[i].pattern,1)}*\n  ${fancytext(commands[i].desc,1)}\n`}}
+  
+              
+   
+   //str += `╰━━━━━━━━━━━───⊷\nꜱʟᴀꜱʜᴇʀ-ᴏꜰꜰɪᴄɪᴀʟ \n www.youtube.com/c/infinite9452`
+             try{ return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: text + Config.caption}); }catch{return await send(citel,str,{},"",citel);}
+          }
+      )
     //---------------------------------------------------------------------------
 Secktor.cmd({
         pattern: "owner",
