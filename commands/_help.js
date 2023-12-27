@@ -13,7 +13,7 @@ Secktor.cmd({
             alias: ["menu"],
             desc: "Help list",
             category: "general",
-            react: "✨",
+            react: "📑",
             filename: __filename
         },
         async(Void, citel, text) => {
@@ -45,30 +45,30 @@ Secktor.cmd({
                 let str = `╭━〔 *${Config.botname}* 〕━◉\n`
                 str +=
                     '```' + `┃ ╭━━━━━━━━━━━━━━◉
-┃ ┃ Plugins:- ${commands.length}
-┃ ┃ User:- ${citel.pushName}
-┃ ┃ Owner:- ${Config.ownername}
-┃ ┃ Prefix:- [ ${prefix} ]
-┃ ┃ Version:- 2.0.1
-┃ ┃ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-┃ ┃ Time:- ${time}
-┃ ┃ Date:- ${date}
+┃ ┃  💓 ᴘʟᴜɢɪɴꜱ:- ${commands.length}
+┃ ┃  💋 ᴜꜱᴇʀ :- ${citel.pushName}
+┃ ┃  🇱🇰 ᴏᴡɴᴇʀ:- ${Config.ownername}
+┃ ┃  🤖 ᴘʀᴇꜰɪx:- [ ${prefix} ]
+┃ ┃  🤡 ᴠᴇʀꜱɪᴏɴ:- 1
+┃ ┃  🍂 ᴍᴇᴍ:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+┃ ┃  🍀 ᴛɪᴍᴇ:- ${time}
+┃ ┃  👨‍✈️ ᴅᴀᴛᴇ:- ${date}
 ┃ ╰━━━━━━━━━━━━━━◉\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `┠┌─⭓『   *${tiny(category)}*  』\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `┠┌─⭓『 *${tiny(category)}* 』\n` ;      
+                   str += `┠┌─🔞『   *${tiny(category)}*  』\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `┠┌─🔞『 *${tiny(category)}* 』\n` ;      
                         for (const plugins of cmds[category]) { str += `┃│◦ ${fancytext(plugins,1)}\n` ; }
-                        str += `┃└──────────⭓\n`  ;
+                        str += `┃└──────────🔞\n`  ;
                         break ;
                    }
                    else { for (const plugins of cmds[category]) { str += `┃│◦ ${fancytext(plugins,1)}\n` ; }
-                         str += `┃└──────────⭓\n`  ; 
+                         str += `┃└──────────🔞\n`  ; 
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `⫸ Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ 🍀\n⫸ʙᴏᴛ ᴄʀᴇᴀᴛᴇʀꜱ-:\n⫸ ᴍʀ-ᴋᴀʟɪɴᴅᴜ 🤹‍♂️\n⫸ ᴄʏʙᴇʀ-ᴛʜᴜꜱʜᴀɴ 🤹‍♂️`
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
