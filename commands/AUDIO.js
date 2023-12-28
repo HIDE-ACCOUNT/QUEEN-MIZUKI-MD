@@ -41,7 +41,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                     url: anu.thumbnail,
                },
                 caption: `
-┃ 𝚀𝚄𝙴𝙴𝙽-𝙼𝙸𝚉𝚄𝙺𝙸 𝚈𝚃 𝙼𝙿3 𝙳𝙾𝚆𝙽┃
+┃🧚 QUEEN MIZYKI YTMP3 DOWNLODER 🧚┃
 
 
 💭 *Title:* ${anu.title}
@@ -134,7 +134,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
 
 cmd({
             pattern: "video",
-            react: "",
+            react: "⏳",
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
@@ -158,7 +158,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                 },
                 caption: `
 
-┃𝚀𝚄𝙴𝙴𝙽 𝙼𝙸𝚉𝚄𝙺𝙸 𝚈𝚃 𝙼𝙿4 𝙳𝙾𝚆𝙽┃
+┃🧚 QUEEN MIZUKI YTMP4 DOWNLODER 🧚┃
 
  
 🔖 *Title:* ${anu.title}
@@ -211,6 +211,8 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                         caption:` 
  _*Duration:* ${anu.timestamp}_
  _*Uploaded:* ${anu.ago}_
+
+ CREATED BY MR-KALINDU & CYBER-THUSHAN
  `,   
 		    }
                  const txt2 = await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
