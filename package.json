@@ -77,6 +77,7 @@
                        "sirasa-news": "latest",
                        "tech-news-scraper": "latest",
                        "ios-news": "latest",
+                       "tiktokdl":"0.0.4",
                        "@bochilteam/scraper": "^4.0.22-alpha.0",
                        "nima-threads-dl-api": "latest",
                        "@sl-code-lords/movie-dl": "^1.0.2",
