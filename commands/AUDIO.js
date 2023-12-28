@@ -41,7 +41,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                     url: anu.thumbnail,
                },
                 caption: `
-┃🧚 QUEEN MIZYKI YTMP3 DOWNLODER 🧚┃
+┃🧚 QUEEN MIZUKI SONG DOWNLODER 🧚┃
 
 
 💭 *Title:* ${anu.title}
@@ -158,7 +158,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                 },
                 caption: `
 
-┃🧚 QUEEN MIZUKI YTMP4 DOWNLODER 🧚┃
+┃🧚 QUEEN MIZUKI VIDEO DOWNLODER 🧚┃
 
  
 🔖 *Title:* ${anu.title}
