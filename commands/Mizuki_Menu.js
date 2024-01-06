@@ -1,720 +1,82 @@
-const os = require('os');
-const { tlang, botpic,cmd, prefix, runtime,Config,formatp } = require('../lib')
-const axios = require('axios')
-const speed = require('performance-now')
-
-//---------------------------------------------------------------------------
-cmd({
-
-            pattern: "menu",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "🎲",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/52d12737a0d15888155ec.jpg',
-
-                },
-
-                caption: `
-❍═════════════════════❍
-    *_Qᴜᴇᴇɴ ᴍɪᴢᴜᴋɪ ᴍᴇɴᴜ ʟɪꜱᴛ_*
-   ✦╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-
-┏⃞❑⃝🦹⃟➥.1 *ᴅᴏᴡɴʟᴏᴅᴇʀ ᴍᴇɴᴜ*
-┃
-┣⃞❑⃝🧜‍♂️⃟➥.2 *ɢʀᴏᴜᴘ ᴍᴇɴᴜ*
-┃
-┣⃞❑⃝🧜‍♀️⃟➥.3 *ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ*
-┃
-┣⃞❑⃝🍁⃟➥.4 *ɴᴇᴡꜱ ᴍᴇɴᴜ*
-┃
-┣⃞❑⃝💕⃟➥.5 *ɢᴇɴᴇʀᴇʟ ᴍᴇɴᴜ*
-┃
-┗⃞❑⃝🔖⃟➥.6 *ʟᴏɢᴏ ᴍᴇɴᴜ*
-❍═════════════════════❍
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
-
-//---------------------------------------------------------------------------
-cmd({
-
-            pattern: "1",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "♣️",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/b943d0171b8477aa9962f.jpg',
-
-                },
-
-                caption: `
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ᴄᴏᴍᴍᴀɴᴅꜱ*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-│ ᴀᴘᴋ
-│ ꜰʙ
-│ ᴛɪᴋᴛᴏᴋ
-│ ɪɴꜱᴛᴀɢʀᴀᴍ
-│ ꜱᴜʙᴅʟ
-│ ᴛɢꜱ
-│ ꜱᴏɴɢ
-│ ɢᴅʀɪᴠᴇ
-│ ᴛᴛꜱ
-│ ᴠɪᴅᴇᴏ
-│ ᴀᴜᴅɪᴏ
-│ ꜱᴏᴜɴᴅ
-│ ʀɪɴɢᴛᴏɴᴇ
-│ ᴘɪɴᴛ
-│ ᴡᴀᴍᴏᴅ
-│ ᴍᴇᴅɪᴀꜰɪʀᴇ
-│ ᴘʟᴀʏ
-│ ʏᴛꜱ
-│ ʏᴛᴍᴘ4
-│ ʏᴛᴍᴘ3
-│ ʏᴛᴅᴏᴄ
-│ ɢɪᴛᴄʟᴏɴᴇ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
-
+const os = require('os')
+const moment = require("moment-timezone")
+const fs = require("fs")
+const Config = require('../config')
+let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
+const long = String.fromCharCode(8206)
+const readmore = long.repeat(4001)
+const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
-cmd({
-
-            pattern: "2",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "♨️",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
+Secktor.cmd({
+            pattern: "help",
+            alias: ["menu"],
+            desc: "Help list",
+            category: "general",
+            react: "✨",
+            filename: __filename
         },
-
         async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/bef332ec2ad67473118ca.jpg',
-
-                },
-
-                caption: `
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-│ ɢᴅᴇꜱᴄ
-│ ɢɴᴀᴍᴇ
-│ ᴀɴᴛɪꜰᴀᴋᴇ
-│ ᴘᴅᴍ
-│ ᴡᴀʀɴ
-│ ɪɴᴠɪᴛᴇ
-│ ʀᴇꜱᴇᴛ
-│ ᴛᴀɢᴀʟʟ
-│ ᴋɪᴋ
-│ ɴᴜᴍ
-│ ʀᴇꜱᴇᴛᴡᴀʀɴ
-│ ᴘᴏʟʟ
-│ ᴘʀᴏꜰɪʟᴇ
-│ ʀᴀɴᴋ
-│ ᴘʀᴏᴍᴏᴛᴇ
-│ ᴅᴇᴍᴏᴛᴇ
-│ ᴋɪᴄᴋ
-│ ɢʀᴏᴜᴘ
-│ ɢᴘᴘ
-│ ᴛᴀɢ
-│ ʟᴇꜰᴛ
-│ ᴛᴀɢᴀᴅᴍɪɴ
-│ ᴀᴅᴅ
-│ ᴅᴇʟ
-│ ᴄʜᴇᴄᴋᴡᴀʀɴ
-│ ʙʀᴏᴀᴅᴄᴀꜱᴛ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
+            const { commands } = require('../lib');
+            if (text.split(" ")[0]) {
+                let arr = [];
+                const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
+                if (!cmd) return await citel.reply("*❌No Such commands.*");
+                else arr.push(`*🍁Command:* ${cmd.pattern}`);
+                if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
+                if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
+                if (cmd.desc) arr.push(`*🧩Description:* ${cmd.desc}`);
+                if (cmd.use) arr.push(`*〽️Usage:*\n \`\`\`${prefix}${cmd.pattern} ${cmd.use}\`\`\``);
+                return await citel.reply(arr.join('\n'));
+            } else {
+                const cmds = {}
+                commands.map(async(command, index) => {
+                    if (command.dontAddCommandList === false && command.pattern !== undefined) {
+                        if (!cmds[command.category]) cmds[command.category] = []
+                        cmds[command.category].push(command.pattern)
+                    }
+                })
+                const time = moment(moment())
+                    .format('HH:mm:ss')
+                moment.tz.setDefault('Asia/KOLKATA')
+                    .locale('id')
+                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                let total = await sck1.countDocuments()
+                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                str +=
+                    '```' + `│ ╭──────────────◆
+│ │ User:- ${citel.pushName}
+│ │ Theme:- ${tlang().title}
+│ │ Prefix:- [ ${prefix} ]
+│ │ Owner:- ${Config.ownername}
+│ │ Plugins:- ${commands.length}
+│ │ Users:- ${total}
+│ │ Uptime:- ${runtime(process.uptime())}
+│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+│ │ Time:- ${time}
+│ │ Date:- ${date}
+│ ╰──────────────◆
+╰───────────────⊷\n
+` + '```'
+                for (const category in cmds) 
+                {
+                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
+                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                        break ;
+                   }
+                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
+                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                   }
+  
+                }
+                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                let buttonMessaged = {
+                    image: { url: await botpic() },
+                    caption: str
+                };
+                return await Void.sendMessage(citel.chat, buttonMessaged);
+            }
         }
-
-    )
-
-    //---------------------------------------------------------------------------
-
-cmd({
-
-            pattern: "3",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "🌹",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/33dc300e9f6baac68e8cf.jpg',
-
-                },
-
-                caption: `
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *ꜱᴇᴀʀᴄʜ ᴄᴏᴍᴍᴀɴᴅꜱ*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-│ ꜱꜱ
-│ ꜱᴜʙꜱᴇᴀʀᴄʜ
-│ ɪᴍᴀɢᴇ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
-
-    //---------------------------------------------------------------------------
-cmd({
-
-            pattern: "4",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "🐞",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/3262ae2db223ba1022d2b.jpg',
-
-                },
-
-                caption: `
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *ɴᴇᴡꜱ ᴄᴏᴍᴍᴀɴᴅꜱ*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-│ ɪᴏꜱ
-│ ᴡʙɪ
-│ ᴛᴇᴄʜɴᴇᴡꜱ
-│ ɴᴀꜱᴀ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
-
-    //---------------------------------------------------------------------------
-cmd({
-
-            pattern: "5",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "🦩",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/c607b6545d6f8a7d76c39.jpg',
-
-                },
-
-                caption: `
-┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *ɢᴇɴᴇʀᴇʟ ᴄᴏᴍᴍᴀɴᴅꜱ*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-│ ʜᴇʟᴘ
-│ ʟɪꜱᴛ
-│ ᴏᴡɴᴇʀ
-│ ꜰɪʟᴇ
-│ ʀᴇᴘᴏ
-│ ᴘɪɴɢ
-│ ᴀʟɪᴠᴇ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰
-`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
-    )
-
-    //---------------------------------------------------------------------------
-
-
- 
- //---------------------------------------------------------------------------
-
-cmd({
-
-            pattern: "6",
-
-            desc: "(menu cmdlist).",
-
-            category: "list",
-
-            react: "🌐",
-
-            filename: __filename,
-
-            use: '<faded-Alan walker.>',
-
-        },
-
-        async(Void, citel, text) => {
-
-         
-
-            let buttons = [{
-
-                    buttonId: `${prefix}system`,
-
-                    buttonText: {
-
-                        displayText: "System",
-
-                    },
-
-                    type: 1,
-
-                },
-
-                  {
-
-                    buttonId: `${prefix}ping`,
-
-                    buttonText: {
-
-                        displayText: "Ping",
-
-                    },
-
-                    type: 1,
-
-                },
-
-            ];
-
-            let buttonMessage = {
-
-                image: {
-
-                    url: 'https://telegra.ph/file/7334389985bc75fda595a.jpg',
-
-                },
-
-                caption: `┏━━━━━━━━━━━━━━━✦
-┃ ┌╼╼╼╼╼╼╼╼╼╼●
-┃ │ *𝚃𝙴𝚇𝚃𝙿𝚁𝙾 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂*
-┃ ├╼╼╼╼╼╼╼╼╼╼●
-┃ ├❑🌿⃟➤ᴅᴇᴇᴘꜱᴇᴀ
-┃ ├❑🌿⃟➤ʜᴏʀʀᴏʀ
-┃ ├❑🌿⃟➤ᴡʜɪᴛᴇʙᴇᴀʀ
-┃ ├❑🌿⃟➤ᴊᴏᴋᴇʀ
-┃ ├❑🌿⃟➤ᴍᴇᴛᴀʟʟɪᴄ
-┃ ├❑🌿⃟➤ꜱᴛᴇᴇʟ
-┃ ├❑🌿⃟➤ʜᴀʀʀʏᴘᴏᴛᴛᴇʀ
-┃ ├❑🌿⃟➤ᴜɴᴅᴇʀᴡᴀᴛᴇʀ
-┃ ├❑🌿⃟➤ʟᴜxᴜʀʏ
-┃ ├❑🌿⃟➤ɢʟᴜᴇ
-┃ ├❑🌿⃟➤ꜰᴀʙʀɪᴄ
-┃ ├❑🌿⃟➤ᴛᴏxɪᴄ
-┃ ├❑🌿⃟➤ᴀɴᴄɪᴇɴᴛ
-┃ ├❑🌿⃟➤ᴄʟᴏᴜᴅ
-┃ ├❑🌿⃟➤ᴛʀᴀɴꜱꜰᴏʀᴍᴇʀ
-┃ ├❑🌿⃟➤ᴛʜᴜɴᴅᴇʀ
-┃ ├❑🌿⃟➤ꜱᴄɪꜰɪ
-┃ ├❑🌿⃟➤ꜱᴀɴᴅ
-┃ ├❑🌿⃟➤ʀᴀɪɴʙᴏᴡ
-┃ ├❑🌿⃟➤ᴘᴇɴᴄɪʟ
-┃ ├❑🌿⃟➤ɴᴇᴏɴ
-┃ ├❑🌿⃟➤ᴍᴀɢᴍᴀ
-┃ ├❑🌿⃟➤ʟᴇᴀᴠᴇꜱ
-┃ ├❑🌿⃟➤ɢʟɪᴛᴄʜ
-┃ ├❑🌿⃟➤ᴅɪꜱᴄᴏᴠᴇʀʏ
-┃ ├❑🌿⃟➤ᴄʜʀɪꜱᴛᴍᴀꜱ
-┃ ├❑🌿⃟➤ᴄᴀɴᴅʏ
-┃ ├❑🌿⃟➤1917
-┃ ├❑🌿⃟➤ɴᴇᴡᴛᴇxᴛ
-┃ ├❑🌿⃟➤ʙʟᴀᴄᴋᴘɪɴᴋ
-┃ └╼╼╼╼╼╼╼╼╼╼●
-┗━━━━━━━━━━━━━━━✦
-🍀 *_Qᴜᴇᴇɴ-ᴍɪᴢᴜᴋɪ-ᴍᴅ_* 🍀
-🇱🇰 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ ᴛᴇᴀᴍ_* 🇱🇰`,
-
-                footer: tlang().footer,
-
-
-                headerType: 4,
-
-            };
-
-            return Void.sendMessage(citel.chat, buttonMessage, {
-
-                quoted: citel,
-
-            });
-
-        }
-
     )
