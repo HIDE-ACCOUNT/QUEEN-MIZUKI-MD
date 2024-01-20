@@ -212,7 +212,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
  _*Duration:* ${anu.timestamp}_
  _*Uploaded:* ${anu.ago}_
 
- CREATED BY MR-KALINDU & CYBER-THUSHAN
+ CREATED BY MR-KALINDU 
  `,   
 		    }
                  const txt2 = await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
