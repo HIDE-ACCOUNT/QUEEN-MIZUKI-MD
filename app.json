@@ -32,8 +32,7 @@
      "value": "remove",
      "required" :false
     },
-
-      "READ_MESSAGE": {
+     "READ_MESSAGE": {
     "description": "BOT MSG SEEN TRUE OR FALSE...😊",
      "required" :false,
      "value": "true"
@@ -42,11 +41,11 @@
     "description": "DON'T CUT "MR-KALINDU~" WORD. PUT YOUR SESSION ID HERE...😊",
      "required" :true,
      "value": "MR-KALINDU~"
-    }, 
+     }, 
       "PREFIX": {
-  "description": "GIVE BOT PREFIX...😊",
+      "description": "GIVE BOT PREFIX...😊",
       "value": "."
-  },
+    },
   "OWNER_NUMBER": {
     "description": "GIVE OWNER NUMBER...😊",    
       "value": "94758179948"
