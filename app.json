@@ -1,6 +1,6 @@
 {
   "name": "QUEEN-MIZUKI-MD",
-  "description": "A WHATSAPP MD BOT CREATED BY KALINDU & THUSHAN...",
+  "description": "A WHATSAPP MD BOT CREATED BY KALINDU...",
   "logo": "https://telegra.ph/file/52d12737a0d15888155ec.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "Mizuki-md", "MizukiBot", "Mizuki","MizukiMD","theme bot","multi device","baileys","mr-kalindu"],
   "success_url": "/",
@@ -38,6 +38,11 @@
      "required" :false,
      "value": "true"
     },
+    "SESSION_ID": {
+    "description": "DON'T CUT "MR-KALINDU~" WORD. PUT YOUR SESSION ID HERE...😊",
+     "required" :true,
+     "value": "MR-KALINDU~"
+    }, 
       "PREFIX": {
   "description": "GIVE BOT PREFIX...😊",
       "value": "."
@@ -45,9 +50,7 @@
   "OWNER_NUMBER": {
     "description": "GIVE OWNER NUMBER...😊",    
       "value": "94758179948"
-  },
-   "SESSION_ID": {
-    "description": "GIVE SESSION_ID AFTER QR SCAN...😊 "
+
   },
     "OPENAI_API_KEY": {
     "description": "DON'T CHANGE THIS ",
